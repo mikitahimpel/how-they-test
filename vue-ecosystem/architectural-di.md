@@ -1,6 +1,6 @@
 # Architectural Dependency Injection
 
-Evan You's projects don't use DI containers, decorators, or frameworks. Instead, the APIs themselves are designed with injection points — dependencies are parameters.
+Vue ecosystem projects don't use DI containers, decorators, or frameworks. Instead, the APIs themselves are designed with injection points — dependencies are parameters.
 
 ## Pattern 1: Renderer Abstraction (Vue 3)
 

@@ -2,7 +2,7 @@
 
 ## The Rule
 
-Across all of Evan You's projects, `vi.mock()` for module-level import mocking is almost never used:
+Across all Vue ecosystem projects, `vi.mock()` for module-level import mocking is almost never used:
 
 - **Vue 3**: Found in exactly **1 place** (compiler-sfc warning utility)
 - **Vite**: **0 instances**

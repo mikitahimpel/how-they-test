@@ -1,4 +1,4 @@
-# Overview: Evan You's Testing Philosophy
+# Overview: Vue Ecosystem Testing Philosophy
 
 ## Core Principles
 

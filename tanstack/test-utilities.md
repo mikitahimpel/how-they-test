@@ -214,9 +214,9 @@ import { afterEach } from 'vitest'
 afterEach(() => cleanup())  // clean up rendered components
 ```
 
-## Key Differences from Evan You
+## Key Differences from Vue Ecosystem
 
-| Aspect | Evan You | Tanner Linsley |
+| Aspect | Vue Ecosystem | TanStack |
 |---|---|---|
 | Shared utils | Per-package, small | Dedicated `query-test-utils` package |
 | Warning enforcement | Custom `toHaveBeenWarned()` matcher | Not used |

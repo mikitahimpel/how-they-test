@@ -1,6 +1,8 @@
-# Evan You's Testing Style Guide
+# Vue Ecosystem Testing Conventions
 
-A comprehensive analysis of testing patterns across Evan You's open-source projects: Vue 3, Vite, Vitest, Vue Router, Pinia, and VitePress.
+Analysis of testing patterns across projects in the Vue ecosystem: Vue 3, Vite, Vitest, Vue Router, Pinia, and VitePress.
+
+> **Attribution**: These conventions are shaped by the core teams and contributors of each project, not any single individual. Evan You, as project lead, influences architectural decisions that affect testability, but the testing patterns reflect collaborative work across many contributors.
 
 ## Documents
 

@@ -1,6 +1,6 @@
 # Testing by Subsystem
 
-How different types of code are tested across Evan You's projects.
+How different types of code are tested across Vue ecosystem projects.
 
 ## Reactivity System (Vue 3)
 

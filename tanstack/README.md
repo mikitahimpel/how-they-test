@@ -1,6 +1,8 @@
-# Tanner Linsley's Testing Style (TanStack)
+# TanStack Testing Conventions
 
-Analysis of testing patterns across TanStack Query, TanStack Router, TanStack Table, TanStack Form, and TanStack Virtual.
+Analysis of testing patterns across TanStack projects: Query, Router, Table, Form, and Virtual.
+
+> **Attribution**: These conventions are shaped by the core team and contributors of each TanStack project. Tanner Linsley, as project lead, drives the core/adapter architecture that makes much of the testing approach possible, but the patterns reflect collaborative work across many contributors.
 
 ## Documents
 

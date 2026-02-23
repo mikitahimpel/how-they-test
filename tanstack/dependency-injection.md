@@ -168,9 +168,9 @@ createRouter(options)
 
 The `options` object is the DI container. Tests pass test-friendly options. Production code passes real options. No mocking infrastructure needed.
 
-## Comparison with Evan You's Approach
+## Comparison with Vue Ecosystem Approach
 
-| Evan You | Tanner Linsley |
+| Vue Ecosystem | TanStack |
 |---|---|
 | `createRenderer(nodeOps)` | `new Virtualizer({ observeElementRect, scrollToFn })` |
 | `parse(template, { onError })` | `new FormApi({ validators: { onChange } })` |

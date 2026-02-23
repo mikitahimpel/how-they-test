@@ -1,4 +1,4 @@
-# Overview: Tanner Linsley's Testing Philosophy
+# Overview: TanStack Testing Philosophy
 
 ## Core Principles
 
@@ -27,7 +27,7 @@ Every project includes `.test-d.ts` files that verify TypeScript inference at co
 
 ### 6. Real Instances, Controlled Inputs
 
-Tests create real `QueryClient`, real `FormApi`, real `Virtualizer` — just with controlled options. Same philosophy as Evan You, different domain.
+Tests create real `QueryClient`, real `FormApi`, real `Virtualizer` — just with controlled options. Same philosophy as the Vue ecosystem, different domain.
 
 ## Anti-Patterns (Things He Avoids)
 
