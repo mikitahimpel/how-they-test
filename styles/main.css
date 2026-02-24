@@ -323,13 +323,6 @@ html {
   color: var(--text);
 }
 
-.content-article h3::before {
-  content: "## ";
-  color: var(--text-muted);
-  font-family: var(--mono);
-  font-weight: 400;
-  font-size: 0.85em;
-}
 
 .content-article h4 {
   font-family: var(--mono);
