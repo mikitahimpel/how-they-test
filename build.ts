@@ -95,6 +95,32 @@ const NAV_SECTIONS: NavSection[] = [
       { title: "Per-Project Breakdown", href: "/svelte/per-project-breakdown.html", file: "svelte/per-project-breakdown.md" },
     ],
   },
+  {
+    name: "Angular",
+    dir: "angular",
+    items: [
+      { title: "Overview", href: "/angular/overview.html", file: "angular/overview.md" },
+      { title: "Test Organization", href: "/angular/test-organization.html", file: "angular/test-organization.md" },
+      { title: "TestBed Patterns", href: "/angular/testbed-patterns.html", file: "angular/testbed-patterns.md" },
+      { title: "Component Testing", href: "/angular/component-testing.html", file: "angular/component-testing.md" },
+      { title: "Mocking Patterns", href: "/angular/mocking-patterns.html", file: "angular/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/angular/test-utilities.html", file: "angular/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/angular/per-project-breakdown.html", file: "angular/per-project-breakdown.md" },
+    ],
+  },
+  {
+    name: "React",
+    dir: "react",
+    items: [
+      { title: "Overview", href: "/react/overview.html", file: "react/overview.md" },
+      { title: "Test Organization", href: "/react/test-organization.html", file: "react/test-organization.md" },
+      { title: "Module Re-requiring", href: "/react/module-re-requiring.html", file: "react/module-re-requiring.md" },
+      { title: "ReactNoop Renderer", href: "/react/react-noop-renderer.html", file: "react/react-noop-renderer.md" },
+      { title: "Mocking Patterns", href: "/react/mocking-patterns.html", file: "react/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/react/test-utilities.html", file: "react/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/react/per-project-breakdown.html", file: "react/per-project-breakdown.md" },
+    ],
+  },
 ];
 
 // Build a lookup: relative md path → output html path
@@ -375,6 +401,22 @@ function landingTemplate(rootPrefix: string): string {
       description: "Svelte compiler/runtime and SvelteKit",
       icon: "S",
       color: "#ff3e00",
+      pages: "7 docs",
+    },
+    {
+      name: "Angular",
+      href: `${rootPrefix}angular/overview.html`,
+      description: "Angular core, compiler, router, forms, CDK, Material",
+      icon: "A",
+      color: "#dd0031",
+      pages: "7 docs",
+    },
+    {
+      name: "React",
+      href: `${rootPrefix}react/overview.html`,
+      description: "React core, DOM renderer, reconciler, concurrent features",
+      icon: "R",
+      color: "#61dafb",
       pages: "7 docs",
     },
   ];
