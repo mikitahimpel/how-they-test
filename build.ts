@@ -481,10 +481,12 @@ function landingTemplate(rootPrefix: string): string {
           <span class="code-lang">TERMINAL</span>
         </div>
         <div class="hero-terminal-body">
-          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">grep -r "describe\\|it\\|test" --include="*.spec.ts" | wc -l</span></div>
-          <div class="term-line term-output">47,832 test cases analyzed</div>
-          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat ecosystems.json</span></div>
-          <div class="term-line term-output">{ "vue": 6, "tanstack": 5, "vercel": 3 } <span class="term-cursor">█</span></div>
+          <div class="term-line term-copyable"><span class="term-prompt">$</span> <span class="term-cmd">npx skills add mikitahimpel/how-they-test</span><button class="copy-btn" aria-label="Copy command" onclick="navigator.clipboard.writeText('npx skills add mikitahimpel/how-they-test').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)})">Copy</button></div>
+          <div class="term-line term-output">✓ Installed how-they-test</div>
+          <div class="term-line term-output term-dim">  7 principles · 7 reference files · 4 runners supported</div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">npx skills list</span></div>
+          <div class="term-line term-output">how-they-test <span class="term-dim">— testing best practices from 47k+ test cases</span></div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cursor">█</span></div>
         </div>
       </div>
     </div>

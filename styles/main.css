@@ -986,6 +986,19 @@ html {
   color: var(--text-muted);
 }
 
+.term-dim {
+  color: var(--text-muted);
+}
+
+.term-copyable {
+  display: flex;
+  align-items: center;
+}
+
+.term-copyable .copy-btn {
+  margin-left: auto;
+}
+
 .term-cursor {
   color: var(--green);
   animation: blink 1s step-end infinite;
@@ -1079,6 +1092,106 @@ html {
 }
 
 /* Landing note */
+/* Install section */
+
+.install-section {
+  padding: 24px 0 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.install-card {
+  max-width: 560px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-raised);
+  overflow: hidden;
+}
+
+.install-header {
+  padding: 24px 28px 16px;
+}
+
+.install-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  border: 1px solid var(--green-border);
+  background: var(--green-dim);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.install-header h2 {
+  font-family: var(--sans);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.install-header p {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.install-command {
+  border-top: 1px solid var(--border);
+}
+
+.install-command .code-chrome {
+  border-radius: 0;
+}
+
+.install-command-body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: var(--bg-code);
+  font-family: var(--mono);
+  font-size: 0.875rem;
+}
+
+.install-command-body .term-prompt {
+  color: var(--green);
+  user-select: none;
+}
+
+.install-command-body code {
+  flex: 1;
+  color: var(--text);
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.copy-btn {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  color: var(--green);
+  border-color: var(--green-border);
+  background: var(--green-dim);
+}
+
 .landing-note {
   padding: 32px 0 80px;
   text-align: center;
