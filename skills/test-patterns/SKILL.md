@@ -1,6 +1,6 @@
 ---
 name: test-patterns
-description: "Write better application tests using patterns proven across 7 major open-source ecosystems (47,000+ test cases analyzed). Use when writing tests, reviewing test code, choosing mocking strategies, or asking how should I test this. Covers dependency injection, mock function usage, test isolation, async patterns, and test organization. Works with any test runner."
+description: Testing best practices and patterns extracted from 7 major open-source ecosystems. Use when writing tests, reviewing test code, choosing mocking strategies, setting up test infrastructure, or asking "how should I test this?". Triggers on tasks involving unit tests, integration tests, mocking, dependency injection, async testing, or test organization.
 argument-hint: "<file-or-pattern-to-test>"
 metadata:
   author: how-they-test
