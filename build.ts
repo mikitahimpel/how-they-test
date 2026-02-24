@@ -69,6 +69,19 @@ const NAV_SECTIONS: NavSection[] = [
       { title: "Per-Project Breakdown", href: "/vercel/per-project-breakdown.html", file: "vercel/per-project-breakdown.md" },
     ],
   },
+  {
+    name: "Fastify",
+    dir: "fastify",
+    items: [
+      { title: "Overview", href: "/fastify/overview.html", file: "fastify/overview.md" },
+      { title: "Test Organization", href: "/fastify/test-organization.html", file: "fastify/test-organization.md" },
+      { title: "The Inject Pattern", href: "/fastify/inject-pattern.html", file: "fastify/inject-pattern.md" },
+      { title: "Plugin Testing", href: "/fastify/plugin-testing.html", file: "fastify/plugin-testing.md" },
+      { title: "Mocking Patterns", href: "/fastify/mocking-patterns.html", file: "fastify/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/fastify/test-utilities.html", file: "fastify/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/fastify/per-project-breakdown.html", file: "fastify/per-project-breakdown.md" },
+    ],
+  },
 ];
 
 // Build a lookup: relative md path → output html path
@@ -334,6 +347,14 @@ function landingTemplate(rootPrefix: string): string {
       icon: "▲",
       color: "#ffffff",
       pages: "8 docs",
+    },
+    {
+      name: "Fastify",
+      href: `${rootPrefix}fastify/overview.html`,
+      description: "Fastify core, fastify-cors, fastify-sensible, fastify-autoload",
+      icon: "F",
+      color: "#00ccff",
+      pages: "7 docs",
     },
   ];
 
