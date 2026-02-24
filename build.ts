@@ -82,6 +82,19 @@ const NAV_SECTIONS: NavSection[] = [
       { title: "Per-Project Breakdown", href: "/fastify/per-project-breakdown.html", file: "fastify/per-project-breakdown.md" },
     ],
   },
+  {
+    name: "Svelte",
+    dir: "svelte",
+    items: [
+      { title: "Overview", href: "/svelte/overview.html", file: "svelte/overview.md" },
+      { title: "Test Organization", href: "/svelte/test-organization.html", file: "svelte/test-organization.md" },
+      { title: "Compiler Testing", href: "/svelte/compiler-testing.html", file: "svelte/compiler-testing.md" },
+      { title: "Runtime Testing", href: "/svelte/runtime-testing.html", file: "svelte/runtime-testing.md" },
+      { title: "SvelteKit Testing", href: "/svelte/sveltekit-testing.html", file: "svelte/sveltekit-testing.md" },
+      { title: "Test Utilities", href: "/svelte/test-utilities.html", file: "svelte/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/svelte/per-project-breakdown.html", file: "svelte/per-project-breakdown.md" },
+    ],
+  },
 ];
 
 // Build a lookup: relative md path → output html path
@@ -354,6 +367,14 @@ function landingTemplate(rootPrefix: string): string {
       description: "Fastify core, fastify-cors, fastify-sensible, fastify-autoload",
       icon: "F",
       color: "#00ccff",
+      pages: "7 docs",
+    },
+    {
+      name: "Svelte",
+      href: `${rootPrefix}svelte/overview.html`,
+      description: "Svelte compiler/runtime and SvelteKit",
+      icon: "S",
+      color: "#ff3e00",
       pages: "7 docs",
     },
   ];
