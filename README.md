@@ -2,14 +2,29 @@
 
 A collection of testing conventions and patterns used by prominent open-source ecosystems.
 
-> **Note on attribution**: These docs describe conventions found in project codebases, not personal styles of individual developers. While project leads like Evan You and Tanner Linsley heavily influence architectural decisions, the testing patterns are shaped by entire core teams, community contributors, and years of evolution.
+## Getting Started
+
+```bash
+bun install
+bun run build.ts
+open dist/index.html
+```
+
+## Project Structure
+
+```
+docs/           — Ecosystem documentation (markdown)
+styles/         — CSS for the built site
+build.ts        — Static site generator
+dist/           — Built output (git-ignored)
+```
 
 ## Ecosystems
 
-- [Vue Ecosystem](./vue-ecosystem/) — Testing conventions across Vue 3, Vite, Vitest, Vue Router, Pinia, and VitePress.
-- [TanStack](./tanstack/) — Testing conventions across TanStack Query, Router, Table, Form, and Virtual.
-- [Vercel](./vercel/) — Testing conventions across Next.js, SWR, and Vercel AI SDK.
-- [Fastify](./fastify/) — Testing conventions across Fastify core, fastify-cors, fastify-sensible, and fastify-autoload.
-- [Svelte](./svelte/) — Testing conventions across the Svelte compiler/runtime and SvelteKit.
-- [Angular](./angular/) — Testing conventions across Angular core, compiler, router, forms, CDK, and Material.
-- [React](./react/) — Testing conventions across React core, DOM renderer, reconciler, and concurrent features.
+- [Vue Ecosystem](./docs/vue-ecosystem/) — Vue 3, Vite, Vitest, Vue Router, Pinia, VitePress
+- [TanStack](./docs/tanstack/) — TanStack Query, Router, Table, Form, Virtual
+- [Vercel](./docs/vercel/) — Next.js, SWR, Vercel AI SDK
+- [Fastify](./docs/fastify/) — Fastify core, fastify-cors, fastify-sensible, fastify-autoload
+- [Svelte](./docs/svelte/) — Svelte compiler/runtime and SvelteKit
+- [Angular](./docs/angular/) — Angular core, compiler, router, forms, CDK, Material
+- [React](./docs/react/) — React core, DOM renderer, reconciler, concurrent features

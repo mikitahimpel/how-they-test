@@ -29,96 +29,96 @@ const NAV_SECTIONS: NavSection[] = [
     name: "Vue Ecosystem",
     dir: "vue-ecosystem",
     items: [
-      { title: "Overview", href: "/vue-ecosystem/overview.html", file: "vue-ecosystem/overview.md" },
-      { title: "Test Organization", href: "/vue-ecosystem/test-organization.html", file: "vue-ecosystem/test-organization.md" },
-      { title: "No Import Mocks", href: "/vue-ecosystem/no-import-mocks.html", file: "vue-ecosystem/no-import-mocks.md" },
-      { title: "Architectural DI", href: "/vue-ecosystem/architectural-di.html", file: "vue-ecosystem/architectural-di.md" },
-      { title: "Mocking Patterns", href: "/vue-ecosystem/mocking-patterns.html", file: "vue-ecosystem/mocking-patterns.md" },
-      { title: "Test Utilities", href: "/vue-ecosystem/test-utilities.html", file: "vue-ecosystem/test-utilities.md" },
-      { title: "Testing by Subsystem", href: "/vue-ecosystem/testing-by-subsystem.html", file: "vue-ecosystem/testing-by-subsystem.md" },
-      { title: "E2E & Integration", href: "/vue-ecosystem/e2e-and-integration.html", file: "vue-ecosystem/e2e-and-integration.md" },
-      { title: "Per-Project Breakdown", href: "/vue-ecosystem/per-project-breakdown.html", file: "vue-ecosystem/per-project-breakdown.md" },
+      { title: "Overview", href: "/vue-ecosystem/overview.html", file: "docs/vue-ecosystem/overview.md" },
+      { title: "Test Organization", href: "/vue-ecosystem/test-organization.html", file: "docs/vue-ecosystem/test-organization.md" },
+      { title: "No Import Mocks", href: "/vue-ecosystem/no-import-mocks.html", file: "docs/vue-ecosystem/no-import-mocks.md" },
+      { title: "Architectural DI", href: "/vue-ecosystem/architectural-di.html", file: "docs/vue-ecosystem/architectural-di.md" },
+      { title: "Mocking Patterns", href: "/vue-ecosystem/mocking-patterns.html", file: "docs/vue-ecosystem/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/vue-ecosystem/test-utilities.html", file: "docs/vue-ecosystem/test-utilities.md" },
+      { title: "Testing by Subsystem", href: "/vue-ecosystem/testing-by-subsystem.html", file: "docs/vue-ecosystem/testing-by-subsystem.md" },
+      { title: "E2E & Integration", href: "/vue-ecosystem/e2e-and-integration.html", file: "docs/vue-ecosystem/e2e-and-integration.md" },
+      { title: "Per-Project Breakdown", href: "/vue-ecosystem/per-project-breakdown.html", file: "docs/vue-ecosystem/per-project-breakdown.md" },
     ],
   },
   {
     name: "TanStack",
     dir: "tanstack",
     items: [
-      { title: "Overview", href: "/tanstack/overview.html", file: "tanstack/overview.md" },
-      { title: "Test Organization", href: "/tanstack/test-organization.html", file: "tanstack/test-organization.md" },
-      { title: "Core/Adapter Split", href: "/tanstack/core-adapter-split.html", file: "tanstack/core-adapter-split.md" },
-      { title: "Mocking Patterns", href: "/tanstack/mocking-patterns.html", file: "tanstack/mocking-patterns.md" },
-      { title: "Dependency Injection", href: "/tanstack/dependency-injection.html", file: "tanstack/dependency-injection.md" },
-      { title: "Test Utilities", href: "/tanstack/test-utilities.html", file: "tanstack/test-utilities.md" },
-      { title: "Async Testing", href: "/tanstack/async-testing.html", file: "tanstack/async-testing.md" },
-      { title: "Type Testing", href: "/tanstack/type-testing.html", file: "tanstack/type-testing.md" },
-      { title: "Per-Project Breakdown", href: "/tanstack/per-project-breakdown.html", file: "tanstack/per-project-breakdown.md" },
+      { title: "Overview", href: "/tanstack/overview.html", file: "docs/tanstack/overview.md" },
+      { title: "Test Organization", href: "/tanstack/test-organization.html", file: "docs/tanstack/test-organization.md" },
+      { title: "Core/Adapter Split", href: "/tanstack/core-adapter-split.html", file: "docs/tanstack/core-adapter-split.md" },
+      { title: "Mocking Patterns", href: "/tanstack/mocking-patterns.html", file: "docs/tanstack/mocking-patterns.md" },
+      { title: "Dependency Injection", href: "/tanstack/dependency-injection.html", file: "docs/tanstack/dependency-injection.md" },
+      { title: "Test Utilities", href: "/tanstack/test-utilities.html", file: "docs/tanstack/test-utilities.md" },
+      { title: "Async Testing", href: "/tanstack/async-testing.html", file: "docs/tanstack/async-testing.md" },
+      { title: "Type Testing", href: "/tanstack/type-testing.html", file: "docs/tanstack/type-testing.md" },
+      { title: "Per-Project Breakdown", href: "/tanstack/per-project-breakdown.html", file: "docs/tanstack/per-project-breakdown.md" },
     ],
   },
   {
     name: "Vercel",
     dir: "vercel",
     items: [
-      { title: "Overview", href: "/vercel/overview.html", file: "vercel/overview.md" },
-      { title: "Test Organization", href: "/vercel/test-organization.html", file: "vercel/test-organization.md" },
-      { title: "Mocking Patterns", href: "/vercel/mocking-patterns.html", file: "vercel/mocking-patterns.md" },
-      { title: "Test Harnesses", href: "/vercel/test-harnesses.html", file: "vercel/test-harnesses.md" },
-      { title: "Test Utilities", href: "/vercel/test-utilities.html", file: "vercel/test-utilities.md" },
-      { title: "E2E & Integration", href: "/vercel/e2e-and-integration.html", file: "vercel/e2e-and-integration.md" },
-      { title: "Rust Testing", href: "/vercel/rust-testing.html", file: "vercel/rust-testing.md" },
-      { title: "Per-Project Breakdown", href: "/vercel/per-project-breakdown.html", file: "vercel/per-project-breakdown.md" },
+      { title: "Overview", href: "/vercel/overview.html", file: "docs/vercel/overview.md" },
+      { title: "Test Organization", href: "/vercel/test-organization.html", file: "docs/vercel/test-organization.md" },
+      { title: "Mocking Patterns", href: "/vercel/mocking-patterns.html", file: "docs/vercel/mocking-patterns.md" },
+      { title: "Test Harnesses", href: "/vercel/test-harnesses.html", file: "docs/vercel/test-harnesses.md" },
+      { title: "Test Utilities", href: "/vercel/test-utilities.html", file: "docs/vercel/test-utilities.md" },
+      { title: "E2E & Integration", href: "/vercel/e2e-and-integration.html", file: "docs/vercel/e2e-and-integration.md" },
+      { title: "Rust Testing", href: "/vercel/rust-testing.html", file: "docs/vercel/rust-testing.md" },
+      { title: "Per-Project Breakdown", href: "/vercel/per-project-breakdown.html", file: "docs/vercel/per-project-breakdown.md" },
     ],
   },
   {
     name: "Fastify",
     dir: "fastify",
     items: [
-      { title: "Overview", href: "/fastify/overview.html", file: "fastify/overview.md" },
-      { title: "Test Organization", href: "/fastify/test-organization.html", file: "fastify/test-organization.md" },
-      { title: "The Inject Pattern", href: "/fastify/inject-pattern.html", file: "fastify/inject-pattern.md" },
-      { title: "Plugin Testing", href: "/fastify/plugin-testing.html", file: "fastify/plugin-testing.md" },
-      { title: "Mocking Patterns", href: "/fastify/mocking-patterns.html", file: "fastify/mocking-patterns.md" },
-      { title: "Test Utilities", href: "/fastify/test-utilities.html", file: "fastify/test-utilities.md" },
-      { title: "Per-Project Breakdown", href: "/fastify/per-project-breakdown.html", file: "fastify/per-project-breakdown.md" },
+      { title: "Overview", href: "/fastify/overview.html", file: "docs/fastify/overview.md" },
+      { title: "Test Organization", href: "/fastify/test-organization.html", file: "docs/fastify/test-organization.md" },
+      { title: "The Inject Pattern", href: "/fastify/inject-pattern.html", file: "docs/fastify/inject-pattern.md" },
+      { title: "Plugin Testing", href: "/fastify/plugin-testing.html", file: "docs/fastify/plugin-testing.md" },
+      { title: "Mocking Patterns", href: "/fastify/mocking-patterns.html", file: "docs/fastify/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/fastify/test-utilities.html", file: "docs/fastify/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/fastify/per-project-breakdown.html", file: "docs/fastify/per-project-breakdown.md" },
     ],
   },
   {
     name: "Svelte",
     dir: "svelte",
     items: [
-      { title: "Overview", href: "/svelte/overview.html", file: "svelte/overview.md" },
-      { title: "Test Organization", href: "/svelte/test-organization.html", file: "svelte/test-organization.md" },
-      { title: "Compiler Testing", href: "/svelte/compiler-testing.html", file: "svelte/compiler-testing.md" },
-      { title: "Runtime Testing", href: "/svelte/runtime-testing.html", file: "svelte/runtime-testing.md" },
-      { title: "SvelteKit Testing", href: "/svelte/sveltekit-testing.html", file: "svelte/sveltekit-testing.md" },
-      { title: "Test Utilities", href: "/svelte/test-utilities.html", file: "svelte/test-utilities.md" },
-      { title: "Per-Project Breakdown", href: "/svelte/per-project-breakdown.html", file: "svelte/per-project-breakdown.md" },
+      { title: "Overview", href: "/svelte/overview.html", file: "docs/svelte/overview.md" },
+      { title: "Test Organization", href: "/svelte/test-organization.html", file: "docs/svelte/test-organization.md" },
+      { title: "Compiler Testing", href: "/svelte/compiler-testing.html", file: "docs/svelte/compiler-testing.md" },
+      { title: "Runtime Testing", href: "/svelte/runtime-testing.html", file: "docs/svelte/runtime-testing.md" },
+      { title: "SvelteKit Testing", href: "/svelte/sveltekit-testing.html", file: "docs/svelte/sveltekit-testing.md" },
+      { title: "Test Utilities", href: "/svelte/test-utilities.html", file: "docs/svelte/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/svelte/per-project-breakdown.html", file: "docs/svelte/per-project-breakdown.md" },
     ],
   },
   {
     name: "Angular",
     dir: "angular",
     items: [
-      { title: "Overview", href: "/angular/overview.html", file: "angular/overview.md" },
-      { title: "Test Organization", href: "/angular/test-organization.html", file: "angular/test-organization.md" },
-      { title: "TestBed Patterns", href: "/angular/testbed-patterns.html", file: "angular/testbed-patterns.md" },
-      { title: "Component Testing", href: "/angular/component-testing.html", file: "angular/component-testing.md" },
-      { title: "Mocking Patterns", href: "/angular/mocking-patterns.html", file: "angular/mocking-patterns.md" },
-      { title: "Test Utilities", href: "/angular/test-utilities.html", file: "angular/test-utilities.md" },
-      { title: "Per-Project Breakdown", href: "/angular/per-project-breakdown.html", file: "angular/per-project-breakdown.md" },
+      { title: "Overview", href: "/angular/overview.html", file: "docs/angular/overview.md" },
+      { title: "Test Organization", href: "/angular/test-organization.html", file: "docs/angular/test-organization.md" },
+      { title: "TestBed Patterns", href: "/angular/testbed-patterns.html", file: "docs/angular/testbed-patterns.md" },
+      { title: "Component Testing", href: "/angular/component-testing.html", file: "docs/angular/component-testing.md" },
+      { title: "Mocking Patterns", href: "/angular/mocking-patterns.html", file: "docs/angular/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/angular/test-utilities.html", file: "docs/angular/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/angular/per-project-breakdown.html", file: "docs/angular/per-project-breakdown.md" },
     ],
   },
   {
     name: "React",
     dir: "react",
     items: [
-      { title: "Overview", href: "/react/overview.html", file: "react/overview.md" },
-      { title: "Test Organization", href: "/react/test-organization.html", file: "react/test-organization.md" },
-      { title: "Module Re-requiring", href: "/react/module-re-requiring.html", file: "react/module-re-requiring.md" },
-      { title: "ReactNoop Renderer", href: "/react/react-noop-renderer.html", file: "react/react-noop-renderer.md" },
-      { title: "Mocking Patterns", href: "/react/mocking-patterns.html", file: "react/mocking-patterns.md" },
-      { title: "Test Utilities", href: "/react/test-utilities.html", file: "react/test-utilities.md" },
-      { title: "Per-Project Breakdown", href: "/react/per-project-breakdown.html", file: "react/per-project-breakdown.md" },
+      { title: "Overview", href: "/react/overview.html", file: "docs/react/overview.md" },
+      { title: "Test Organization", href: "/react/test-organization.html", file: "docs/react/test-organization.md" },
+      { title: "Module Re-requiring", href: "/react/module-re-requiring.html", file: "docs/react/module-re-requiring.md" },
+      { title: "ReactNoop Renderer", href: "/react/react-noop-renderer.html", file: "docs/react/react-noop-renderer.md" },
+      { title: "Mocking Patterns", href: "/react/mocking-patterns.html", file: "docs/react/mocking-patterns.md" },
+      { title: "Test Utilities", href: "/react/test-utilities.html", file: "docs/react/test-utilities.md" },
+      { title: "Per-Project Breakdown", href: "/react/per-project-breakdown.html", file: "docs/react/per-project-breakdown.md" },
     ],
   },
 ];
@@ -520,24 +520,20 @@ async function build() {
   await mkdir(STYLES_DEST, { recursive: true });
   await cp(STYLES_SRC, join(STYLES_DEST, "main.css"));
 
-  // Collect all markdown files
+  // Collect all markdown files from docs/ directory
+  const DOCS = join(ROOT, "docs");
   const mdFiles: string[] = [];
+
+  // Add root README (lives outside docs/)
+  mdFiles.push("README.md");
+
+  // Scan docs/ for ecosystem markdown files
   const glob = new Glob("**/*.md");
   for await (const file of glob.scan({
-    cwd: ROOT,
+    cwd: DOCS,
     onlyFiles: true,
   })) {
-    // Exclude non-content directories
-    if (
-      file.startsWith("node_modules/") ||
-      file.startsWith(".git/") ||
-      file.startsWith(".agents/") ||
-      file.startsWith(".claude/") ||
-      file.startsWith("dist/")
-    ) {
-      continue;
-    }
-    mdFiles.push(file);
+    mdFiles.push(`docs/${file}`);
   }
 
   console.log(`Found ${mdFiles.length} markdown files`);
@@ -545,7 +541,9 @@ async function build() {
   // Process each markdown file
   for (const mdFile of mdFiles) {
     const srcPath = join(ROOT, mdFile);
-    const htmlRelPath = mdToHtmlPath(mdFile);
+    // Strip docs/ prefix for output paths so URLs stay clean
+    const outputRelPath = mdFile.startsWith("docs/") ? mdFile.slice(5) : mdFile;
+    const htmlRelPath = mdToHtmlPath(outputRelPath);
     const destPath = join(DIST, htmlRelPath);
 
     // Root README → custom landing page
