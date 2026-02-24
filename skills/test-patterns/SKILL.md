@@ -1,15 +1,10 @@
 ---
 name: test-patterns
-description: >
-  Write better application tests using patterns proven across 7 major open-source
-  ecosystems (47,000+ test cases analyzed). Use when writing tests, reviewing test
-  code, choosing mocking strategies, or asking "how should I test this?". Covers
-  dependency injection, mock function usage, test isolation, async patterns, and
-  test organization. Works with any runner — Vitest, Jest, node:test, bun:test.
+description: "Write better application tests using patterns proven across 7 major open-source ecosystems (47,000+ test cases analyzed). Use when writing tests, reviewing test code, choosing mocking strategies, or asking how should I test this. Covers dependency injection, mock function usage, test isolation, async patterns, and test organization. Works with any test runner."
+argument-hint: "<file-or-pattern-to-test>"
 metadata:
   author: how-they-test
   version: "1.0.0"
-  argument-hint: <file-or-pattern-to-test>
 ---
 
 # How They Test — Best Practices for Application Testing
