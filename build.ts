@@ -307,6 +307,120 @@ function htmlTemplate(title: string, content: string, currentHref: string): stri
 </html>`;
 }
 
+// ===== Landing Page Template =====
+
+function landingTemplate(rootPrefix: string): string {
+  const ecosystems = [
+    {
+      name: "Vue Ecosystem",
+      href: `${rootPrefix}vue-ecosystem/overview.html`,
+      description: "Vue 3, Vite, Vitest, Vue Router, Pinia, VitePress",
+      icon: "V",
+      color: "#42b883",
+      pages: "9 docs",
+    },
+    {
+      name: "TanStack",
+      href: `${rootPrefix}tanstack/overview.html`,
+      description: "TanStack Query, Router, Table, Form, Virtual",
+      icon: "T",
+      color: "#ef4444",
+      pages: "9 docs",
+    },
+    {
+      name: "Vercel",
+      href: `${rootPrefix}vercel/overview.html`,
+      description: "Next.js, SWR, Vercel AI SDK",
+      icon: "▲",
+      color: "#ffffff",
+      pages: "8 docs",
+    },
+  ];
+
+  const cards = ecosystems
+    .map(
+      (e) => `
+        <a href="${e.href}" class="eco-card" style="--card-color: ${e.color}">
+          <div class="eco-card-icon">${e.icon}</div>
+          <div class="eco-card-body">
+            <h3>${e.name}</h3>
+            <p>${e.description}</p>
+          </div>
+          <span class="eco-card-meta">${e.pages} →</span>
+        </a>`
+    )
+    .join("\n");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How They Test</title>
+  <link rel="stylesheet" href="${rootPrefix}styles/main.css">
+</head>
+<body class="landing">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <div class="landing-bg">
+    <div class="grid-overlay"></div>
+  </div>
+
+  <main class="landing-main" id="main-content">
+    <div class="landing-hero">
+      <div class="hero-badge">OPEN SOURCE RESEARCH</div>
+      <h1 class="hero-title">
+        <span class="hero-line">How They</span>
+        <span class="hero-line hero-gradient">Test</span>
+      </h1>
+      <p class="hero-sub">
+        Testing conventions and patterns from the world's most
+        influential open-source ecosystems — extracted, documented,
+        and ready to learn from.
+      </p>
+
+      <div class="hero-terminal">
+        <div class="code-chrome">
+          <span class="code-dots"><span></span><span></span><span></span></span>
+          <span class="code-lang">TERMINAL</span>
+        </div>
+        <div class="hero-terminal-body">
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">grep -r "describe\\|it\\|test" --include="*.spec.ts" | wc -l</span></div>
+          <div class="term-line term-output">47,832 test cases analyzed</div>
+          <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat ecosystems.json</span></div>
+          <div class="term-line term-output">{ "vue": 6, "tanstack": 5, "vercel": 3 } <span class="term-cursor">█</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="eco-grid">
+      ${cards}
+    </div>
+
+    <div class="landing-note">
+      <p>These docs describe conventions found in project codebases, not personal styles. The testing patterns are shaped by entire core teams, community contributors, and years of evolution.</p>
+    </div>
+  </main>
+
+  <script>
+    // Typewriter effect for terminal
+    const lines = document.querySelectorAll('.term-line');
+    let delay = 400;
+    lines.forEach((line, i) => {
+      line.style.opacity = '0';
+      line.style.transform = 'translateY(8px)';
+      setTimeout(() => {
+        line.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        line.style.opacity = '1';
+        line.style.transform = 'translateY(0)';
+      }, delay);
+      delay += line.classList.contains('term-output') ? 600 : 400;
+    });
+  </script>
+</body>
+</html>`;
+}
+
 // ===== Build =====
 
 async function build() {
@@ -349,6 +463,15 @@ async function build() {
     const srcPath = join(ROOT, mdFile);
     const htmlRelPath = mdToHtmlPath(mdFile);
     const destPath = join(DIST, htmlRelPath);
+
+    // Root README → custom landing page
+    if (mdFile === "README.md") {
+      const fullHtml = landingTemplate("./");
+      await mkdir(dirname(destPath), { recursive: true });
+      await writeFile(destPath, fullHtml);
+      console.log(`  ${mdFile} → ${htmlRelPath} (landing)`);
+      continue;
+    }
 
     // Read & parse
     const mdContent = await readFile(srcPath, "utf-8");
