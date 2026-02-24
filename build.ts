@@ -482,10 +482,10 @@ function landingTemplate(rootPrefix: string): string {
         </div>
         <div class="hero-terminal-body">
           <div class="term-line term-copyable"><span class="term-prompt">$</span> <span class="term-cmd">npx skills add mikitahimpel/how-they-test</span><button class="copy-btn" aria-label="Copy command" onclick="navigator.clipboard.writeText('npx skills add mikitahimpel/how-they-test').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1500)})">Copy</button></div>
-          <div class="term-line term-output">✓ Installed how-they-test</div>
+          <div class="term-line term-output">✓ Installed test-patterns</div>
           <div class="term-line term-output term-dim">  7 principles · 7 reference files · 4 runners supported</div>
           <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">npx skills list</span></div>
-          <div class="term-line term-output">how-they-test <span class="term-dim">— testing best practices from 47k+ test cases</span></div>
+          <div class="term-line term-output">test-patterns <span class="term-dim">— testing best practices from 47k+ test cases</span></div>
           <div class="term-line"><span class="term-prompt">$</span> <span class="term-cursor">█</span></div>
         </div>
       </div>

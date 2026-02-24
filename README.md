@@ -12,7 +12,7 @@ npx skills add mikitahimpel/how-they-test
 
 ## Available Skills
 
-### how-they-test
+### test-patterns
 
 Runner-agnostic testing best practices distilled from real-world open-source codebases. 7 core principles with detailed reference files.
 

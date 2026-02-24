@@ -1,5 +1,5 @@
 ---
-name: how-they-test
+name: test-patterns
 description: >
   Write better application tests using patterns proven across 7 major open-source
   ecosystems (47,000+ test cases analyzed). Use when writing tests, reviewing test
