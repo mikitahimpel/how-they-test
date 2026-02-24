@@ -497,44 +497,56 @@ html {
   opacity: 0.35;
 }
 
-/* Terminal chrome bar */
+/* Editor title bar */
 .code-chrome {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  background: #0a0a0a;
+  padding: 8px 16px;
+  background: var(--bg-code);
   border-bottom: 1px solid var(--border);
   user-select: none;
+  gap: 12px;
 }
 
 .code-dots {
   display: flex;
-  gap: 7px;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .code-dots span {
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 
-.code-dots span:nth-child(1) {
-  background: #ff5f57;
-  box-shadow: 0 0 6px rgba(255, 95, 87, 0.4);
+.code-dots span:nth-child(1) { background: #ff5f57; }
+.code-dots span:nth-child(2) { background: #febc2e; }
+.code-dots span:nth-child(3) { background: #28c840; }
+
+/* Filepath breadcrumb in chrome bar */
+.code-filepath {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: auto;
 }
 
-.code-dots span:nth-child(2) {
-  background: #febc2e;
-  box-shadow: 0 0 6px rgba(254, 188, 46, 0.4);
+.code-filepath .fp-sep {
+  color: var(--border-strong);
+  margin: 0 1px;
 }
 
-.code-dots span:nth-child(3) {
-  background: #28c840;
-  box-shadow: 0 0 6px rgba(40, 200, 64, 0.4);
+.code-filepath .fp-file {
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
+/* Language-only label */
 .code-lang {
   font-family: var(--mono);
   font-size: 0.6875rem;
@@ -542,9 +554,13 @@ html {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
-  background: var(--bg-surface);
-  padding: 3px 12px;
-  border: 1px solid var(--border);
+  margin-left: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  .code-chrome {
+    background: var(--bg-surface);
+  }
 }
 
 /* Code block itself */

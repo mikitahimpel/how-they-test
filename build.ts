@@ -159,20 +159,41 @@ async function createMarkedInstance() {
         }
 
         const langLabel = language.toUpperCase();
+
+        // Extract filename from first-line comment like "// path/to/file.ts"
+        let codeText = text;
+        let filename = "";
+        const filenameMatch = codeText.match(/^\/\/\s*([\w./_-]+\.\w+)\s*\n/);
+        if (filenameMatch) {
+          filename = filenameMatch[1];
+          codeText = codeText.slice(filenameMatch[0].length);
+        }
+
+        // Chrome: filepath breadcrumb or language label
+        let chromeLabel: string;
+        if (filename) {
+          const parts = filename.split("/");
+          const file = parts.pop() || "";
+          const dirs = parts.map((d) => `${d}<span class="fp-sep">/</span>`).join("");
+          chromeLabel = `<span class="code-filepath">${dirs}<span class="fp-file">${file}</span></span>`;
+        } else {
+          chromeLabel = `<span class="code-lang">${langLabel}</span>`;
+        }
+
         let codeHtml: string;
         try {
-          codeHtml = highlighter.codeToHtml(text, {
+          codeHtml = highlighter.codeToHtml(codeText, {
             lang: language,
             themes: { dark: "github-dark", light: "github-light" },
           });
         } catch {
-          const escaped = text
+          const escaped = codeText
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;");
           codeHtml = `<pre class="shiki"><code>${escaped}</code></pre>`;
         }
-        return `<div class="code-block"><div class="code-chrome"><span class="code-dots"><span></span><span></span><span></span></span><span class="code-lang">${langLabel}</span></div>${codeHtml}</div>`;
+        return `<div class="code-block${filename ? " has-filename" : ""}"><div class="code-chrome"><span class="code-dots"><span></span><span></span><span></span></span>${chromeLabel}</div>${codeHtml}</div>`;
       },
       // Convert .md links to .html links
       link({ href, title, text }) {
