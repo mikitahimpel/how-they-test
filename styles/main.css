@@ -125,11 +125,19 @@ html {
   text-transform: uppercase;
 }
 
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-logo img {
+  width: 24px;
+  height: 24px;
+}
+
 .site-header a::before {
-  content: ">";
-  color: var(--green);
-  margin-right: 8px;
-  font-weight: 400;
+  content: none;
 }
 
 .site-header a:hover {

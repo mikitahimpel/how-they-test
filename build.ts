@@ -307,6 +307,12 @@ function htmlTemplate(title: string, content: string, currentHref: string): stri
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} — How They Test</title>
+  <link rel="icon" href="${rootPrefix}styles/logo.svg" type="image/svg+xml">
+  <meta property="og:title" content="${title} — How They Test">
+  <meta property="og:description" content="Testing conventions and patterns from the world's most influential open-source ecosystems.">
+  <meta property="og:image" content="${rootPrefix}styles/og-image.svg">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="${rootPrefix}styles/main.css">
 </head>
 <body>
@@ -314,7 +320,7 @@ function htmlTemplate(title: string, content: string, currentHref: string): stri
 
   <header class="site-header">
     <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-    <a href="${rootPrefix}index.html">How They Test</a>
+    <a href="${rootPrefix}index.html" class="site-logo"><img src="${rootPrefix}styles/logo.svg" alt="" width="24" height="24">How They Test</a>
   </header>
 
   <div class="site-layout">
@@ -441,6 +447,12 @@ function landingTemplate(rootPrefix: string): string {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How They Test</title>
+  <link rel="icon" href="${rootPrefix}styles/logo.svg" type="image/svg+xml">
+  <meta property="og:title" content="How They Test">
+  <meta property="og:description" content="Testing conventions and patterns from the world's most influential open-source ecosystems.">
+  <meta property="og:image" content="${rootPrefix}styles/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="${rootPrefix}styles/main.css">
 </head>
 <body class="landing">
@@ -516,9 +528,11 @@ async function build() {
   await Bun.$`rm -rf ${DIST}`.quiet();
   await mkdir(DIST, { recursive: true });
 
-  // Copy CSS
+  // Copy CSS and assets
   await mkdir(STYLES_DEST, { recursive: true });
   await cp(STYLES_SRC, join(STYLES_DEST, "main.css"));
+  await cp(join(ROOT, "styles", "logo.svg"), join(STYLES_DEST, "logo.svg"));
+  await cp(join(ROOT, "styles", "og-image.svg"), join(STYLES_DEST, "og-image.svg"));
 
   // Collect all markdown files from docs/ directory
   const DOCS = join(ROOT, "docs");
